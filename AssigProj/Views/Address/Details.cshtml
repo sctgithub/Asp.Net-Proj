@@ -1,0 +1,66 @@
+﻿@model AssigProj.Models.Address
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Address</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.City.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City.CityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country.CountryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country.CountryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HouseNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HouseNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Line1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Line1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Line2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Line2)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AddressId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
